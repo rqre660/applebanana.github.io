@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>訴說與傾聽</title>
 </head>
 <body>
-  <h1>歡迎來到訴說與傾聽平台</h1>
-  <p>這裡是一個讓你可以傾訴心情的地方。</p>
-  <form>
-    <textarea placeholder="請在這裡輸入你的話語..." rows="5" cols="40"></textarea><br>
-    <button type="submit">送出</button>
-  </form>
+  <h1>訴說與傾聽</h1>
+  <p>請輸入你想訴說的話：</p>
+
+  <textarea id="input" rows="6" cols="60" placeholder="例如：在星巴克打工的體驗真讓人不悅。"></textarea>
+  <br>
+  <button id="submit">送出並匿名化</button>
+
+  <h3>處理後的結果：</h3>
+  <pre id="result">（這裡將顯示匿名化結果）</pre>
+
   <script src="js/main.js"></script>
 </body>
 </html>
